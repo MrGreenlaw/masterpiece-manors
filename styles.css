@@ -85,10 +85,13 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;color:var(--paper);}
 .hero-inner{max-width:46rem;}
 .crown-wrap{margin-bottom:1.75rem;}
 .crown-mark{width:4.5rem;height:auto;margin:0 auto;}
-.crown-mark.glow{animation:glow-pulse 4.5s ease-in-out infinite;}
-@keyframes glow-pulse{
-  0%,100%{filter:drop-shadow(0 0 2px rgba(201,162,75,.25));}
-  50%{filter:drop-shadow(0 0 14px rgba(232,201,121,.65));}
+.crown-mark.glow{
+  filter:drop-shadow(0 0 8px rgba(201,162,75,.35));
+  animation:crown-in 1.1s var(--ease) both;
+}
+@keyframes crown-in{
+  from{opacity:0;transform:translateY(-6px) scale(.92);}
+  to{opacity:1;transform:translateY(0) scale(1);}
 }
 
 .eyebrow{
@@ -114,11 +117,11 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;color:var(--paper);}
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  animation:shimmer 6s linear infinite;
+  animation:shimmer-in 1.6s var(--ease) .1s both;
 }
-@keyframes shimmer{
-  0%{background-position:0% 0;}
-  100%{background-position:-220% 0;}
+@keyframes shimmer-in{
+  from{background-position:200% 0;}
+  to{background-position:0% 0;}
 }
 @media (prefers-reduced-motion: reduce){
   .wordmark,.crown-mark.glow{animation:none;}
