@@ -31,7 +31,7 @@ a{color:inherit;}
 h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;color:var(--paper);}
 
 .grain{
-  position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.05;mix-blend-mode:overlay;
+  position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.09;mix-blend-mode:overlay;
   background-image:radial-gradient(circle at 1px 1px, #fff 1px, transparent 0);
   background-size:3px 3px;
 }
@@ -183,7 +183,6 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;color:var(--paper);}
 }
 .btn-outline:hover{border-color:var(--gold);box-shadow:0 0 18px rgba(201,162,75,.25);}
 
-.purpose{background:var(--ink-soft);}
 .lede{
   font-family:var(--serif);
   font-size:clamp(1.4rem,3.4vw,2.1rem);
@@ -202,6 +201,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;color:var(--paper);}
   max-width:30rem;
 }
 
+.why{background:var(--ink-soft);}
 .why-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -225,43 +225,6 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;color:var(--paper);}
   background:var(--gold);
 }
 
-.see-more{
-  text-align:center;
-  margin-top:2.75rem;
-}
-.see-more-toggle{
-  display:inline-flex;
-  align-items:center;
-  gap:.55rem;
-  background:none;
-  border:none;
-  cursor:pointer;
-  font-family:var(--sans);
-  font-size:.8rem;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:var(--gold);
-  padding:.4rem .2rem;
-  min-height:44px;
-}
-.see-more-arrow{
-  display:inline-block;
-  transition:transform .35s var(--ease);
-}
-.see-more-toggle[aria-expanded="true"] .see-more-arrow{
-  transform:rotate(90deg);
-}
-.see-more-toggle:hover{color:var(--gold-bright);}
-.see-more-detail{
-  font-family:var(--serif);
-  font-size:1.05rem;
-  line-height:1.7;
-  color:var(--paper-dim);
-  max-width:38rem;
-  margin:1.5rem auto 0;
-}
-
-.founders{background:var(--ink-soft);}
 .founders-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -296,6 +259,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;color:var(--paper);}
   margin:1.75rem 0 0;
 }
 
+.offer{background:var(--ink-soft);}
 .offer-list{
   list-style:none;
   margin:0;padding:0;
