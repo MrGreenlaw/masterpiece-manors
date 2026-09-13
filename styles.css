@@ -232,7 +232,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;color:var(--paper);}
   margin-bottom:2.5rem;
 }
 .founder{text-align:center;}
-#photo-wrap-allison{--photo-pos-x:50%;--photo-pos-y:16%;--photo-zoom:1.55;}
+#photo-wrap-allison{--photo-pos-x:50%;--photo-pos-y:19%;--photo-zoom:1.55;}
 #photo-wrap-casey{--photo-pos-x:50%;--photo-pos-y:10%;--photo-zoom:1.15;}
 .founder-photo-wrap{
   width:9rem;height:9rem;
