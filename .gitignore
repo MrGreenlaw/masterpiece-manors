@@ -1,0 +1,17 @@
+# --- project-bootstrap baseline ---
+.env
+.env.*
+!.env.example
+.vault/
+.DS_Store
+node_modules/
+.venv/
+__pycache__/
+DerivedData/
+xcuserdata/
+.next/
+*.pem
+*.p12
+.pipeline-gate-failed
+.push-failed
+.claude/worktrees/
